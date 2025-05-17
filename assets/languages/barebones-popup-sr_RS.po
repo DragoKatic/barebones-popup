@@ -1,0 +1,59 @@
+# Barebones PopUp plugin Serbian translation
+msgid ""
+msgstr ""
+"Project-Id-Version: Barebones PopUp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-09 00:00:00\n"
+"PO-Revision-Date: 2025-05-15 15:47+0200\n"
+"Last-Translator: Drago Katić\n"
+"Language-Team: Serbian (sr_RS)\n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+msgid "Barebones PopUp Settings"
+msgstr "Barebones Искачући прозор Подешавања"
+
+msgid "Popup (CSS)"
+msgstr "Искачући прозор (<em>CSS</em>)"
+
+msgid "Customize the CSS that styles your popup window."
+msgstr "Прилагодите <em>CSS</em> који стилизује ваш Искачући прозор."
+
+msgid "Popup Content (HTML)"
+msgstr "Искачући прозор садржај (<em>HTML</em>)"
+
+msgid "HTML content for your popup. Use standard tags (div, h4, p, etc.)."
+msgstr "<em>HTML</em> садржај за ваш Искачући прозор. Користите стандардне тагове (<em>div</em>, <em>h4</em>, <em>p</em>, итд.)."
+
+msgid "Save Settings"
+msgstr "Сачувај подешавања"
+
+msgid "Popup content not found."
+msgstr "Искачући прозор садржај није пронађен."
+
+msgid "Barebones PopUp"
+msgstr "Barebones Искачући прозор"
+
+msgid "Close"
+msgstr "Затвори"
+
+msgid "For additional information or assistance, feel free to get in touch."
+msgstr "За додатне информације или помоћ, слободно нас контактирајте."
+
+msgid "Settings saved successfully."
+msgstr "Подешавања су успешно сачувана."
+
+msgid "Failed to save settings."
+msgstr "Није успело чување подешавања."
+
+msgid "Welcome and thank you for using Barebones PopUp"
+msgstr "Добродошли и хвала што користите Barebones Искачући прозор"
+
+msgid "<h4>Welcome and thank you for using Barebones PopUp</h4><p>This plugin offers a minimalist admin interface. To make significant adjustments, you will need to modify the HTML, CSS, and JavaScript code directly.</p><p><a class=\"custom-btn btn custom-link\" href=\"https://dragokatic.github.io/\" target=\"_blank\">Developer Site</a></p>"
+msgstr "<h4>Добродошли и хвала вам што користите Barebones PopUp</h4><p>Овај додатак пружа минималистички администраторски интерфејс. За значајније измене, потребно је директно изменити <em>HTML</em>, <em>CSS</em> и <em>JavaScript</em> код у датотекама овог додатка.</p><p><a class=\"custom-btn btn custom-link\" href=\"https://dragokatic.github.io/\" target=\"_blank\">Сајт аутора</a></p>"
+
+msgid "Use the fields below to customize your popup's appearance and content. Save your changes to update the popup displayed on your site."
+msgstr "Користите поља испод да прилагодите изглед и садржај вашег Искачућег прозора. Сачувајте измене да бисте ажурирали Искачући прозор приказан на вашем сајту."

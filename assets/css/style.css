@@ -1,0 +1,104 @@
+/* 
+ * Barebones PopUp plugin – Optimized with button border transition
+ * License: GPLv2 or later
+ */
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 10, 20, 0.8);
+  z-index: 9999;
+}
+
+/* Popup container */
+.popup-inner {
+  width: 320px;
+  padding: 16px;
+  background: #0d1321;
+  border: 1px solid #ff911c;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 16px rgba(13, 19, 33, 0.3);
+  position: relative;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.2;
+}
+
+/* Font + box sizing inheritance */
+.popup-inner * {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Close button */
+.popup-inner .close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff911c;
+  cursor: pointer;
+}
+
+/* Field description text */
+.description {
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+  color: #555555;
+  font-family: 'JetBrains Mono', monospace;
+  display: block;
+}
+
+/* Admin Notices */
+.notice {
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-left: 5px solid #0073aa;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Success Notice */
+.notice-success {
+  border-left-color: #46b450;
+  background-color: #e6f7e6;
+  color: #2c6e2d;
+}
+
+/* Error Notice */
+.notice-error {
+  border-left-color: #dc3232;
+  background-color: #f9e6e6;
+  color: #8b2a2a;
+}
+
+/* Warning Notice */
+.notice-warning {
+  border-left-color: #ffb900;
+  background-color: #fff7e6;
+  color: #e6a900;
+}
+
+/* Info Notice */
+.notice-info {
+  border-left-color: #00a0d2;
+  background-color: #e6f7ff;
+  color: #00659d;
+}

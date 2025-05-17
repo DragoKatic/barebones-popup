@@ -1,0 +1,33 @@
+barebones-popup/                  # Root directory of the plugin
+├── admin/                        # Admin-specific functionality
+│   └── admin-page.php            # Code for the plugin's admin settings page
+├── assets/                       # Static resources
+│   └── css/
+│   │   └── style.css             # Main stylesheet for popup styling
+│   └── images/
+│   │   └── screenshots/
+│   │       ├── screenshot-1.png  # Screenshot used on the plugin page
+│   │       └── screenshot-2.png  # Additional screenshot for plugin showcase
+│   └── js/
+│   │   └── script.js             # JavaScript that defines popup behavior
+│   └── languages/                # Translation files
+│       ├── barebones-popup-sr_RS.mo
+│       ├── barebones-popup-sr_RS.po
+│       └── barebones-popup.pot
+│   └── banner-1544x500.png       # WordPress.org plugin header image (large)
+│   └── banner-772x250.png        # WordPress.org plugin header image (standard)
+├── includes/                     # Core backend logic
+│   ├── assets-loader.php         # Registers and enqueues scripts and styles
+│   ├── db-handler.php            # Handles database operations
+│   ├── install.php               # Code executed on plugin activation
+│   └── uninstall.php             # Code executed on plugin deletion
+├── templates/                    # HTML/PHP templates
+│   ├── admin-form.php            # Form layout for admin settings
+│   └── display-popup.php         # Template used to render the popup
+├── .gitattributes                # Git configuration for export rules
+├── barebones-popup.php           # Main plugin file (plugin header goes here)
+├── barebones-popup.png           # Main image shown in the WP plugin list
+├── license.txt                   # License file (GPLv2 or later)
+├── README.md                     # GitHub-friendly README file (Markdown)
+├── readme.txt                    # WordPress.org-compatible readme file
+└── STRUCTURE.txt                 # Describes the plugin folder structure
