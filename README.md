@@ -43,7 +43,7 @@ Yes. Barebones PopUp is open-source and released under the GNU General Public Li
 
 ## Changelog
 
-**1.0**  
+**1.0.0**  
 * Initial public release.
 
 ## License

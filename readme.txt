@@ -1,37 +1,39 @@
 === Barebones PopUp ===
-Contributors: dragokatic  
-Tags: popup, modal, custom popup, wordpress popup  
-Requires at least: 5.8
-Tested up to: 6.9  
-Requires PHP: 7.4  
-Stable tag: 1.0  
-License: GPLv2 or later  
-License URI: https://www.gnu.org/licenses/gpl-2.0.html  
-Plugin URI: https://github.com/DragoKatic/barebones-popup  
+Contributors: dragokatic
+Tags: popup, modal, custom popup, lightweight, developer-friendly
+Requires at least: 6.8
+Tested up to: 6.8
+Requires PHP: 7.4
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Plugin URI: https://github.com/DragoKatic/barebones-popup
 Author URI: https://dragokatic.github.io/
+
+Barebones PopUp is a minimalist popup plugin that gives developers full control over content and styling.
 
 == Description ==
 
-Barebones PopUp is a minimalist and developer-friendly WordPress plugin for displaying customizable popup windows.  
-It gives you full control over popup content and styling using raw HTML and CSS from a simple admin interface.
+Barebones PopUp is a minimalist, lightweight, and developer-friendly WordPress plugin for displaying customizable popup windows on your website.  
+It provides full control over popup content and styling using raw HTML and CSS via a simple admin interface, without relying on heavy frameworks or visual builders.
 
-Barebones PopUp is ideal for developers who want full control over popup appearance without relying on heavy visual builders or rigid frameworks.
+Perfect for developers and site owners who want precise control over popup appearance and performance without compromising speed or security.
 
 == Features ==
 
 * Simple, minimalist admin interface.
-* Custom HTML content and CSS styling from the dashboard.
+* Custom HTML content and CSS styling directly from the dashboard.
 * Popup auto-displays on the homepage by default.
-* Insert popup manually with the `[barebones_popup]` shortcode.
-* No JavaScript input allowed — for security and speed.
-* Ideal for custom themes and precise visual control.
+* Insert popup manually anywhere with the `[barebones_popup]` shortcode.
+* No JavaScript input allowed — ensures security and fast loading.
+* Lightweight and fast, ideal for custom themes and precise visual control.
 
 == Installation ==
 
 1. Upload the plugin folder to `/wp-content/plugins/`.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. The popup will automatically display on the homepage.
-4. Optionally, use the `[barebones_popup]` shortcode in posts or pages to control placement.
+4. Optionally, use the `[barebones_popup]` shortcode in posts or pages to control popup placement.
 
 == Frequently Asked Questions ==
 
@@ -40,13 +42,16 @@ Yes. Barebones PopUp works with any standard WordPress installation.
 
 = What kind of code can I enter in the popup editor? =  
 You can enter plain text and standard HTML tags (e.g., `<p>`, `<a>`, `<h2>`).  
-You can also add CSS, which will only be applied to the popup. JavaScript is not allowed.
+You can also add CSS that applies only to the popup. JavaScript is not supported to maintain security and speed.
 
-= Where is the content stored? =  
-All popup content and CSS are stored safely in the WordPress database.
+= Where is the popup content stored? =  
+All popup content and CSS are securely stored in the WordPress database.
 
 = Can I customize or extend this plugin? =  
-Absolutely. Barebones PopUp is open-source and licensed under GPLv2 or later, which allows full modification and redistribution under the same terms.
+Absolutely. Barebones PopUp is open-source and licensed under GPLv2 or later, allowing full modification and redistribution under the same terms.
+
+= Will this plugin affect my website speed? =  
+No. The plugin is lightweight and designed to load minimal assets, ensuring fast page load times.
 
 == Screenshots ==
 
@@ -55,7 +60,7 @@ Absolutely. Barebones PopUp is open-source and licensed under GPLv2 or later, wh
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * Initial public release.
 
 == License ==
