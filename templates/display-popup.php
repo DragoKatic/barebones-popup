@@ -2,47 +2,49 @@
 /**
  * Front-end popup display template for Barebones PopUp plugin.
  *
+ * Outputs the popup HTML and scoped CSS on the front-end.
+ * Loads popup data from the database with caching.
+ *
  * @package Barebones_PopUp
  */
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
-// Fetch the popup content by fixed ID = 1.
-global $wpdb;
+// Ensure the database handler function is available.
+if ( ! function_exists( 'barebones_popup_get_data' ) ) {
+	require_once plugin_dir_path( __FILE__ ) . '../includes/db-handler.php';
+}
 
-$table_name = $wpdb->prefix . 'barebones_popup';
-$result     = $wpdb->get_row(
-    $wpdb->prepare( "SELECT * FROM $table_name WHERE id = %d", 1 )
-);
+// Retrieve popup data from cache or database.
+$result = barebones_popup_get_data();
 
-// If no popup content is found, exit.
+// Abort if no popup data is found.
 if ( ! $result ) {
-    return;
+	return;
 }
 ?>
 
-<!-- Popup HTML -->
+<!-- Popup HTML structure -->
 <div id="ac-wrapper" class="popup-overlay">
-    <div class="popup-inner">
-        <span class="close">&times;</span>
+	<div class="popup-inner">
+		<span class="close">&times;</span>
 
-        <?php if ( ! empty( $result->popup_content ) ) : ?>
-            <div class="popup-content">
-                <?php echo wp_kses_post( translate( $result->popup_content, 'barebones-popup' ) ); ?>
-                <?php /* echo wp_kses_post( $result->popup_content );*/ ?>
-            </div>
-        <?php endif; ?>
+		<?php if ( ! empty( $result->popup_content ) ) : ?>
+			<div class="popup-content">
+				<?php echo wp_kses_post( $result->popup_content ); ?>
+			</div>
+		<?php endif; ?>
 
-        <?php if ( ! empty( $result->popup_css ) ) : ?>
-            <style>
-                /* Scoped popup CSS */
-                #ac-wrapper {
-                    <?php echo wp_strip_all_tags( $result->popup_css ); ?>
-                }
-            </style>
-        <?php endif; ?>
-    </div>
+		<?php if ( ! empty( $result->popup_css ) ) : ?>
+			<style>
+				/* Scoped popup CSS injected inline */
+				#ac-wrapper {
+					<?php echo esc_html( $result->popup_css ); ?>
+				}
+			</style>
+		<?php endif; ?>
+	</div>
 </div>

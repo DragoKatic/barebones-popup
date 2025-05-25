@@ -2,6 +2,10 @@
 /**
  * Admin settings form for Barebones PopUp plugin.
  *
+ * Displays the settings page in the WordPress admin area where users
+ * can edit the popup CSS and HTML content. Handles output of
+ * current values loaded from the database.
+ *
  * @package Barebones_PopUp
  */
 
@@ -10,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-// Load the most recent values from the database.
+// Retrieve the latest popup data from the database.
 $data = barebones_popup_get_data();
 $popup_css     = isset( $data->popup_css ) ? $data->popup_css : '';
 $popup_content = isset( $data->popup_content ) ? $data->popup_content : '';
@@ -43,7 +47,7 @@ $popup_content = isset( $data->popup_content ) ? $data->popup_content : '';
 
             <tr>
                 <th scope="row">
-                    <label for="popup_content"><?php echo wp_kses_post( __( 'Popup Content (HTML)', 'barebones-popup' ) ); ?></label>
+                    <label for="popup_content"><?php echo wp_kses_post( __( 'Popup (HTML)', 'barebones-popup' ) ); ?></label>
                 </th>
                 <td>
                     <textarea
