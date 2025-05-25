@@ -1,48 +1,50 @@
 <?php
 /**
- * Assets loader for Barebones PopUp plugin
+ * Assets loader for Barebones PopUp plugin.
+ *
+ * Handles the registration and enqueuing of frontend and admin styles and scripts,
+ * as well as loading the plugin textdomain for localization.
  *
  * @package Barebones_PopUp
  */
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
 /**
  * Load plugin textdomain for translations.
+ *
+ * Allows localization by loading .mo and .po files from the /languages directory.
  */
 function barebones_popup_load_textdomain() {
-    $plugin_rel_path = basename(dirname(__DIR__)) . '/assets/languages';
-    load_plugin_textdomain('barebones-popup', false, $plugin_rel_path);
+	$plugin_rel_path = basename( dirname( __DIR__ ) ) . '/languages';
+	load_plugin_textdomain( 'barebones-popup', false, $plugin_rel_path );
 }
-add_action('init', 'barebones_popup_load_textdomain');
-
-function barebones_popup_enqueue_admin_styles() {
-    wp_enqueue_style( 'jetbrains-mono', 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap', array(), null );
-}
-add_action( 'admin_enqueue_scripts', 'barebones_popup_enqueue_admin_styles' );
+add_action( 'init', 'barebones_popup_load_textdomain' );
 
 /**
- * Enqueue plugin CSS and JS.
+ * Enqueue frontend CSS and JS for the popup display.
+ *
+ * Loads the custom popup styling and functionality on the site’s frontend.
  */
 function barebones_popup_enqueue_assets() {
-    // Enqueue main popup style.
-    wp_enqueue_style(
-        'barebones-popup-style',
-        plugin_dir_url( __FILE__ ) . '../assets/css/style.css',
-        array(),
-        '1.0' // Version of the plugin.
-    );
+	$version = '1.0'; // Update to filemtime() for dynamic cache busting if needed.
 
-    // Enqueue popup JavaScript.
-    wp_enqueue_script(
-        'barebones-popup-script',
-        plugin_dir_url( __FILE__ ) . '../assets/js/script.js',
-        array(),
-        '1.0', // Version of the plugin.
-        true // Load script in the footer.
-    );
+	wp_enqueue_style(
+		'barebones-popup-style',
+		plugin_dir_url( __FILE__ ) . '../assets/css/style.css',
+		array(),
+		$version
+	);
+
+	wp_enqueue_script(
+		'barebones-popup-script',
+		plugin_dir_url( __FILE__ ) . '../assets/js/script.js',
+		array(),
+		$version,
+		true // Load in footer.
+	);
 }
 add_action( 'wp_enqueue_scripts', 'barebones_popup_enqueue_assets' );
