@@ -1,0 +1,53 @@
+# Translation of Barebones PopUp plugin into Serbian (Cyrillic)
+# Copyright (C) 2025 Drago Katić
+# This file is distributed under the same license as the Barebones PopUp plugin.
+# Author: Drago Katić
+msgid ""
+msgstr ""
+"Project-Id-Version: Barebones PopUp 1.0.0\n"
+"Report-Msgid-Bugs-To: https://dragokatic.github.io/index.html#section_5\n"
+"POT-Creation-Date: 2025-05-21 15:59+0200\n"
+"PO-Revision-Date: 2025-05-22 19:53+0200\n"
+"Last-Translator: Drago Katić\n"
+"Language-Team: \n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+msgid "Barebones PopUp Settings"
+msgstr "Подешавања Barebones искачућег прозора"
+
+msgid "Use the fields below to customize your popup's appearance and content. Save your changes to update the popup displayed on your site."
+msgstr "Користите поља испод да прилагодите изглед и садржај вашег искачућег прозора. Сачувајте измене да бисте ажурирали искачући прозор приказан на вашем сајту."
+
+msgid "Popup (CSS)"
+msgstr "Искачући прозор (<em>CSS</em>)"
+
+msgid "Customize the CSS that styles your popup window."
+msgstr "Прилагодите <em>CSS</em> који стилизује ваш искачући прозор."
+
+msgid "Popup (HTML)"
+msgstr "Искачући прозор (<em>HTML</em>)"
+
+msgid "HTML content for your popup. Use standard tags (div, h4, p, etc.)."
+msgstr "<em>HTML</em> садржај за ваш искачући прозор. Користите стандардне тагове (<em>div</em>, <em>h4</em>, <em>p</em>, итд.)."
+
+msgid "Save Settings"
+msgstr "Сачувај подешавања"
+
+msgid "Popup content not found."
+msgstr "Искачући прозор садржај није пронађен."
+
+msgid "Barebones PopUp"
+msgstr "Barebones PopUp"
+
+msgid "Close"
+msgstr "Затвори"
+
+msgid "Settings saved successfully."
+msgstr "Подешавања су успешно сачувана."
+
+msgid "Failed to save settings."
+msgstr "Није успело чување подешавања."
