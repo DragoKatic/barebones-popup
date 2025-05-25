@@ -1,16 +1,23 @@
-/* 
- * Barebones PopUp plugin – Optimized with button border transition
- * License: GPLv2 or later
+/*
+ * Barebones PopUp plugin stylesheet
+ *
+ * This stylesheet provides styling for the popup overlay,
+ * admin notices, and custom admin form elements.
+ *
+ * @package Barebones_PopUp
  */
 
-/* Reset */
+/* Import Google Font: JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* Reset basic box model */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Overlay */
+/* Popup overlay wrapper */
 .popup-overlay {
   position: fixed;
   inset: 0;
@@ -21,7 +28,7 @@
   z-index: 9999;
 }
 
-/* Popup container */
+/* Popup content container */
 .popup-inner {
   width: 320px;
   padding: 16px;
@@ -35,13 +42,13 @@
   line-height: 1.2;
 }
 
-/* Font + box sizing inheritance */
+/* Inherit font and box sizing for inner elements */
 .popup-inner * {
   font-family: inherit;
   box-sizing: border-box;
 }
 
-/* Close button */
+/* Close button inside popup */
 .popup-inner .close {
   position: absolute;
   top: 8px;
@@ -52,7 +59,7 @@
   cursor: pointer;
 }
 
-/* Field description text */
+/* Descriptive text for fields */
 .description {
   margin-top: 8px;
   font-size: 14px;
@@ -62,7 +69,7 @@
   display: block;
 }
 
-/* Admin Notices */
+/* Base style for admin notices */
 .notice {
   margin: 20px 0;
   padding: 15px 20px;
@@ -75,28 +82,28 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Success Notice */
+/* Success notice */
 .notice-success {
   border-left-color: #46b450;
   background-color: #e6f7e6;
   color: #2c6e2d;
 }
 
-/* Error Notice */
+/* Error notice */
 .notice-error {
   border-left-color: #dc3232;
   background-color: #f9e6e6;
   color: #8b2a2a;
 }
 
-/* Warning Notice */
+/* Warning notice */
 .notice-warning {
   border-left-color: #ffb900;
   background-color: #fff7e6;
   color: #e6a900;
 }
 
-/* Info Notice */
+/* Info notice */
 .notice-info {
   border-left-color: #00a0d2;
   background-color: #e6f7ff;
