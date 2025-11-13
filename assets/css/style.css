@@ -51,8 +51,8 @@
 /* Close button inside popup */
 .popup-inner .close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4px;
+  right: 4px;
   font-size: 24px;
   font-weight: 700;
   color: #ff911c;
@@ -108,4 +108,8 @@
   border-left-color: #00a0d2;
   background-color: #e6f7ff;
   color: #00659d;
+}
+
+p {
+  margin-top: 8px;
 }
