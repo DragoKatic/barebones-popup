@@ -33,7 +33,6 @@
  * ├── templates/                   # PHP/HTML templates for output rendering
  * │   ├── admin-form.php           # Markup for admin settings form
  * │   └── display-popup.php        # Markup to render the frontend popup window
- * ├── .gitattributes               # Git export rules and file handling configuration
  * ├── barebones-popup.php          # Main plugin file containing plugin header and bootstrap code
  * ├── barebones-popup.png          # Plugin icon shown in WordPress plugin list
  * ├── license.txt                  # Full license text (GPLv2 or later)

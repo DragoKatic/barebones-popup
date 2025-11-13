@@ -28,9 +28,8 @@ if ( defined( 'BAREBONES_POPUP_LOADED' ) ) {
 }
 define( 'BAREBONES_POPUP_LOADED', true );
 
-// Define essential plugin path and URL constants.
+// Define essential plugin path onstant.
 define( 'BAREBONES_POPUP_PATH', plugin_dir_path( __FILE__ ) );
-define( 'BAREBONES_POPUP_URL', plugin_dir_url( __FILE__ ) );
 define( 'BAREBONES_POPUP_VERSION', '1.0.0' );
 define( 'BAREBONES_POPUP_MINIMUM_WP_VERSION', '6.8' );
 
