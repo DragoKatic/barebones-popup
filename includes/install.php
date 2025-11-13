@@ -97,7 +97,7 @@ function barebones_popup_create_table() {
 		";
 
 		// Default popup HTML content.
-		$default_content = '<h4>Welcome and thank you for using Barebones PopUp</h4><p>This plugin offers a minimalist admin interface. To make significant adjustments, you will need to modify the HTML, CSS, and JavaScript code directly.</p><p><a class="custom-btn btn custom-link" href="https://dragokatic.github.io/" target="_blank">Developer Site</a></p>';
+		$default_content = '<h4>Welcome and thank you for using Barebones PopUp</h4><p>This plugin offers a minimalist admin interface.</p><p>To make significant adjustments, you will need to modify the HTML, CSS, and JavaScript code directly.</p><p><a class="custom-btn btn custom-link" href="https://dragokatic.github.io/" target="_blank">Developer Site</a></p>';
 
 		// Insert default popup data into the table.
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery

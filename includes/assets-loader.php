@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function barebones_popup_load_textdomain() {
 	$plugin_rel_path = basename( dirname( __DIR__ ) ) . '/languages';
+	// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound
 	load_plugin_textdomain( 'barebones-popup', false, $plugin_rel_path );
 }
 add_action( 'init', 'barebones_popup_load_textdomain' );
